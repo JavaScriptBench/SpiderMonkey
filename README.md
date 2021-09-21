@@ -5,6 +5,9 @@ spider monkey with different versions
 
 =====================================================
 
+
+
+
 version 24.2.0
 
 http://ftp.mozilla.org/pub/mozilla.org/js/mozjs-24.2.0.tar.bz2
@@ -20,14 +23,11 @@ Estimated build time: 4.2 SBU (additional 1.6 SBU for the tests)
 
 
 
-
-
-
-
-
-
-
 ========================================================
 
 
+Ref: 
 
+- https://www.linuxfromscratch.org/blfs/view/8.0/general/JS2.html
+- http://ftp.mozilla.org/pub/js/
+- https://hg.mozilla.org/releases/
