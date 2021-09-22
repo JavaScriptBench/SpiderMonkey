@@ -27,6 +27,8 @@ cd mozjs-24.2.0/js/src/
 ./configure
 make -j4
 ./shell/js test.js
+# or using --no-baseline for disabling JIT
+./shell/js --no-baseline  test.js
 ```
 Before `make -j4`, change one line in file `./mozjs-24.2.0/js/src/shell/jsoptparse.cpp`
 
