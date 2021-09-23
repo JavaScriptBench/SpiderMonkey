@@ -59,14 +59,26 @@ Then install:
 sudo make install                                      &&
 sudo install -v -m644 autoconf213.info /usr/share/info &&
 sudo install-info --info-dir=/usr/share/info autoconf213.info
+sudo ln -s /bin/mktemp /usr/bin/mktemp
 ```
 
 Then download source file for 52 from Gitlab:
 ```
 git clone https://salsa.debian.org/gnome-team/mozjs.git
+cd mozjs
 git branch -a
-git checkout 
+git checkout remotes/origin/upstream/52
+cd ./js/src/
+mkdir build
+cd build
+../configure
+touch ../configure
+touch ./config.status
+make -j4
+./js/src/shell/js --version
 ```
+The binary locates in:
+***`~/mozjs/js/src/build/js/src/shell/js`***
 
 
 
