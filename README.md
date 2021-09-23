@@ -41,6 +41,33 @@ The binary locates in:
 ***`~/mozjs-24.2.0/js/src/shell/js`***
 
 
+## version 52.9.1
+
+To build 52.9.1, first install autoconf2.13.
+Install Autoconf by running the following commands:
+```
+tar -xvf autoconf-2.13.tar.gz
+cd autoconf-2.13
+patch -Np1 -i ../autoconf-2.13-consolidated_fixes-1.patch &&
+mv -v autoconf.texi autoconf213.texi                      &&
+rm -v autoconf.info                                       &&
+./configure --prefix=/usr --program-suffix=2.13           &&
+make
+```
+Then install:
+```
+sudo make install                                      &&
+sudo install -v -m644 autoconf213.info /usr/share/info &&
+sudo install-info --info-dir=/usr/share/info autoconf213.info
+```
+
+Then download source file for 52 from Gitlab:
+```
+git clone https://salsa.debian.org/gnome-team/mozjs.git
+git branch -a
+git checkout 
+```
+
 
 
 
