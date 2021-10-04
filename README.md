@@ -48,6 +48,7 @@ The binary locates in:
 To build 52.9.1, first install autoconf2.13.
 Install Autoconf by running the following commands:
 ```
+sudo apt-get install texinfo
 tar -xvf autoconf-2.13.tar.gz
 cd autoconf-2.13
 patch -Np1 -i ../autoconf-2.13-consolidated_fixes-1.patch &&
